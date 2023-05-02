@@ -378,4 +378,8 @@ a.active {
     pointer-events: none;
     cursor: default;
   }   
+
+  #mobile-nav-bar {
+    display: none;
+  }
 }
