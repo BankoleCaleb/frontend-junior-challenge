@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div>
+      <img src="images/logo.svg" alt="our logo">
+    </div>
+    <div>
+      <div class="dropdown">
+        <a href="#">Features</a>
+        <img src="images/icon-arrow-up.svg" alt="caret">
+
+        <div class="collapsed-menu">
+          <a href="#">
+            <img src="images/icon-todo.svg" alt="icon">
+            &nbsp;
+            <span>Todo List</span>
+          </a>
+
+          <a href="#">
+            <img src="images/icon-calendar.svg" alt="icon">
+            &nbsp;
+            <span>Calender</span>
+          </a>
+
+          <a href="#">
+            <img src="images/icon-reminders.svg" alt="icon">
+            &nbsp;&nbsp;
+            <span>Reminders</span>
+          </a>
+
+          <a href="#">
+            <img src="images/icon-planning.svg" alt="icon">
+            &nbsp;
+            <span>Planning</span>
+          </a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Company</a>
+        <img src="images/icon-arrow-up.svg" alt="caret">
+
+        <div class="collapsed-menu">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+      <a href="#" class="active">Careers</a>
+      <a href="#">About</a>
+    </div>
+    <div>
+      <a href="#" class="login">Login</a>
+      <a href="#" class="register">Register</a>
+      
+      <!-- <img src="images/icon-close-menu.svg" alt="close menu" class="mobile-only"> -->
+      <img src="images/icon-menu.svg" alt="open menu" class="mobile-only" id="open">
+    </div>
+  </nav>
+
+  <main>
+    <div id="container">
+      <picture>
+        <source media="(min-width: 500px)" srcset="images/image-hero-desktop.png">
+        <img src="images/image-hero-mobile.png" alt="hero image">
+      </picture>
+
+      <aside>
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes,    create team rituals, and watch productivity soar.</p>
+        <button>Learn more</button>
+
+        <!-- sponsors/clients logo -->
+        <div id="sponsor">
+          <img src="images/client-databiz.svg" alt="one of our sponsor">
+          <img src="images/client-audiophile.svg" alt="one of our sponsor">
+          <img src="images/client-meet.svg" alt="one of our sponsor">
+          <img src="images/client-maker.svg" alt="one of our sponsor">
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <aside id="mobile-nav-bar" class="aside ">
+    <article>
+      <img src="images/icon-close-menu.svg" alt="close" id="close">
+      <div id="nav">
+        <div class="dropdown">
+
+          <a href="#">Features</a>
+          <img src="images/icon-arrow-up.svg" alt="down or up">
+
+          <div class="collapsed-menu">
+            <a href="#">
+              <img src="images/icon-todo.svg" alt="icon">
+              &nbsp;
+              <span>Todo List</span>
+            </a>
+
+            <a href="#">
+              <img src="images/icon-calendar.svg" alt="icon">
+              &nbsp;
+              <span>Calender</span>
+            </a>
+
+            <a href="#">
+              <img src="images/icon-reminders.svg" alt="icon">
+              &nbsp;&nbsp;
+              <span>Reminders</span>
+            </a>
+
+            <a href="#">
+              <img src="images/icon-planning.svg" alt="icon">
+              &nbsp;
+              <span>Planning</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Company</a>
+          <img src="images/icon-arrow-up.svg" alt="down or up">
+
+          <div class="collapsed-menu">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+
+        <div class="nav-footer">
+          <a href="#">Login</a>
+          <a href="#" class="register-btn">Register</a>
+        </div>
+      </div>
+    </article>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
